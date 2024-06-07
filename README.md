@@ -1,4 +1,4 @@
-Blog Post REST API
+# Blog Post REST API
 
 This project is a REST API for managing blog posts, created using Django and Django REST Framework.
 
@@ -8,18 +8,20 @@ Features
 - List all blog posts
 - Retrieve details of a single blog post
 
-Requirements
+## Requirements
 
 - Python 3.8+
 - Django 3.2+
 - Django REST Framework 3.12+
 
-Setup
+## Setup
 
 1. Clone the repository
 
+```sh
 git clone [https://github.com/yourusername/blogpost-api.git](https://github.com/Sousa10/blog-post-api.git)
 cd blogpost-api
+```
 
 2. Create a virtual environment
 
@@ -51,15 +53,15 @@ python manage.py runserver
 
 The API will be available at http://127.0.0.1:8000/.
 
-API Endpoints
+# API Endpoints
 
-List all blog posts
+## List all blog posts
 
-GET /api/posts/
+GET /blogposts/
 
-Create a new blog post
+## Create a new blog post
 
-POST /api/posts/
+POST /blogposts/
 
 Request body:
 
@@ -68,13 +70,13 @@ Request body:
   "content": "Post content"
 }
 
-Retrieve a single blog post
+## Retrieve a single blog post
 
-GET /api/posts/{id}/
+GET /blogposts/{id}/
 
-Update a blog post
+## Update a blog post
 
-PUT /api/posts/{id}/
+PUT /blogposts/{id}/
 
 Request body:
 
@@ -83,9 +85,9 @@ Request body:
   "content": "Updated content"
 }
 
-Partially update a blog post
+## Partially update a blog post
 
-PATCH /api/posts/{id}/
+PATCH /blogposts/{id}/
 
 Request body:
 
@@ -93,7 +95,7 @@ Request body:
   "title": "Updated Title"
 }
 
-Delete a blog post
+## Delete a blog post
 
-DELETE /api/posts/{id}/
+DELETE /blogposts/{id}/
 
